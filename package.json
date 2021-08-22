@@ -10,7 +10,9 @@
     "dev:ssr": "ng run reconversion:serve-ssr",
     "serve:ssr": "node dist/reconversion/server/main.js",
     "build:ssr": "ng build && ng run reconversion:server",
-    "prerender": "ng run reconversion:prerender"
+    "prerender": "ng run reconversion:prerender",
+    "build:functions": "npm run --prefix functions build",
+    "build:all": "npm run build:ssr && npm run build:functions"
   },
   "private": true,
   "dependencies": {
@@ -40,12 +42,16 @@
     "@types/express": "^4.17.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
+    "bufferutil": "^4.0.3",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.3.5"
+    "typescript": "~4.3.5",
+    "utf-8-validate": "^5.0.5",
+    "ws": "^7.4.6",
+    "xhr2": "^0.2.1"
   }
 }
