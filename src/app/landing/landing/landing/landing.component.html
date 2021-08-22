@@ -1,0 +1,39 @@
+<div class="body">
+  <div class="logo">
+    <img src="../../../../assets/images/logo.png">
+  </div>
+  <div class="form-welcome">
+    <div class="bloc">
+      <div>
+        <p>
+          Nous sommes persuadés que la vocation pour la vie est un mythe... en tout cas, en 2021,
+          l'envie de changer de voie professionnelle ne doit plus être objet des peurs et des craintes.
+        </p>
+        <p>
+          Prenez-la comme un super objectif et perséverez.
+        </p>
+        <p>
+          Reconversion-pro.fr est une plateforme en ligne qui vous aidera à construire votre projet
+          de réorientation professionnelle !
+        </p>
+        <p>
+          En attendant le lancement officiel, vous pouvez vous inscrire pour être alerté(e) dès sa mise en service
+        </p>
+      </div>
+    </div>
+    <div style="text-align: center;height: 30vh">
+      <div class="example-container">
+        <mat-form-field appearance="fill"  style="width: 300px;">
+          <mat-label>Renseignez votre email</mat-label>
+          <label>
+            <input matInput placeholder="me@email.fr" [formControl]="email" required>
+          </label>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <button mat-button color="primary" (click)="sendEmail()">Valider</button>
+
+      </div>
+    </div>
+
+  </div>
+</div>

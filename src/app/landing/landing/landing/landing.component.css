@@ -1,0 +1,33 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: contents;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Gill Sans", sans-serif;
+  color: dimgrey;
+}
+
+.bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+  padding: 5%;
+}
+
+.example-form {
+  min-width: 250px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
